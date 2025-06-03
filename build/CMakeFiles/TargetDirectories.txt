@@ -1,0 +1,3 @@
+/home/doteam/Desktop/Camera_team/build/CMakeFiles/zero_app.dir
+/home/doteam/Desktop/Camera_team/build/CMakeFiles/edit_cache.dir
+/home/doteam/Desktop/Camera_team/build/CMakeFiles/rebuild_cache.dir
