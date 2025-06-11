@@ -35,6 +35,8 @@
 #define CMDVID_ID       0x033
 #define CMDRESET_ID     0x034
 #define CMDECHO_ID      0x036
+#define TMSR_ID         0x037
+#define TMLR_ID         0x038
 #define CMDRSV_ID       0x039
 
 
