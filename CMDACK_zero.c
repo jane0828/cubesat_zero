@@ -40,7 +40,7 @@ void send_ack(int sock, const struct can_frame *frame) {
 }
 
 
-void send_nack(int sock, const struct can_frame *frame) {
+void send_nack2(int sock, const struct can_frame *frame) {
 
     if (wait_for_can_up("can0") == 1) {
         struct can_frame nack;
@@ -54,10 +54,52 @@ void send_nack(int sock, const struct can_frame *frame) {
         }
 
         if (write(sock, &ack, sizeof(ack)) != sizeof(ack)) {
-            perror("NACK 전송 실패");
+            perror("NACK2 전송 실패");
         } else {
-            printf("NACK 전송 완료: to 0x%03X (data[0]=0x%02X, data[1]=0x%02X)\n",
+            printf("NACK2 전송 완료: to 0x%03X (data[0]=0x%02X, data[1]=0x%02X)\n",
                 frame->can_id, ack.data[0], ack.data[1]);
         }
     }
 
+
+void send_nack3(int sock, const struct can_frame *frame) {
+
+    if (wait_for_can_up("can0") == 1) {
+        struct can_frame nack;
+        nack.can_id = TO_OBC_ID;
+        nack.can_dlc = 2;
+
+        nack.data[0] = frame->can_id & 0xFF;
+        nack.data[1] = 0x03;
+
+        return;
+        }
+
+        if (write(sock, &ack, sizeof(ack)) != sizeof(ack)) {
+            perror("NACK3 전송 실패");
+        } else {
+            printf("NACK3 전송 완료: to 0x%03X (data[0]=0x%02X, data[1]=0x%02X)\n",
+                frame->can_id, ack.data[0], ack.data[1]);
+        }
+    }
+
+void send_nack4(int sock, const struct can_frame *frame) {
+
+    if (wait_for_can_up("can0") == 1) {
+        struct can_frame nack;
+        nack.can_id = TO_OBC_ID;
+        nack.can_dlc = 2;
+
+        nack.data[0] = frame->can_id & 0xFF;
+        nack.data[1] = 0x04;
+
+        return;
+        }
+
+        if (write(sock, &ack, sizeof(ack)) != sizeof(ack)) {
+            perror("NACK4 전송 실패");
+        } else {
+            printf("NACK4 전송 완료: to 0x%03X (data[0]=0x%02X, data[1]=0x%02X)\n",
+                frame->can_id, ack.data[0], ack.data[1]);
+        }
+    }
