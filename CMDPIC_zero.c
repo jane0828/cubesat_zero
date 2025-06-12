@@ -12,12 +12,15 @@ void parse_camera_command(const uint8_t data[8], uint8_t *delay, uint32_t *shutt
 }
 
 
-void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res, uint8_t mode, int8_t ev) {
+int take_photo_and_send(int sock, struct can_frame *frame, uint8_t delay, uint32_t shutter, uint8_t res, uint8_t mode, int8_t ev) {
     sleep(delay);
 
+    time_t now = time(NULL);
+
+    struct tm *t = localtime(&now);
+
+
     // 파일명 생성
-    time_t now = time(NULL);           // 현재 시간 초 단위로 가져옴 (Unix timestamp, 1970. 1. 1. 이후 지난 초 수)
-    struct tm *t = localtime(&now);    // 년, 월, 시로 변환
     char filename[256];
     snprintf(filename, sizeof(filename),
              "photo_%04d%02d%02d_%02d%02d%02d.jpg",
@@ -29,10 +32,15 @@ void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res,
              "/home/doteam/Desktop/Camera_team/pictures/%s", filename);
 
     int width = 1280, height = 800;
-    if (res == 0x00) { width = 1920; height = 1080; }
-    else if (res == 0x01) { width = 1024; height = 768; }
-    else if (res == 0x03) { width = 1280; height = 720; }
-    else if (res == 0x04) { width = 320; height = 240; }
+    if (res == 0x00) {
+        width = 1920; height = 1080;
+    } else if (res == 0x01) {
+        width = 1024; height = 768;
+    } else if (res == 0x03) {
+        width = 1280; height = 720;
+    } else if (res == 0x04) {
+        width = 320; height = 240;
+    }
 
     const char *mode_str = "normal";
     if (mode == 0x01) mode_str = "sport";
@@ -45,7 +53,7 @@ void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res,
 
     if (system(cmd) != 0) {
         fprintf(stderr, "사진 촬영 실패\n");
-        return;
+        return 3;
     }
 
     sleep(1);
@@ -53,52 +61,59 @@ void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res,
     FILE *fp = fopen(fullpath, "rb");
     if (!fp) {
         perror("파일 열기 실패");
-        return;
+        return 4;
     }
 
-    fseek(fp, 0, SEEK_SET);  // 파일 포인터 맨 앞으로 이동 (안전용)
-
+    fseek(fp, 0, SEEK_SET);
+    send_ack(sock, frame);
     printf("사진 전송 시작: %s\n", fullpath);
 
-    struct can_frame frame;
     int seq = 0;
     size_t len;
 
-    while (1) {
-        memset(&frame, 0, sizeof(frame));  // 프레임 전체 초기화 (쓰레기값 제거)
 
-        len = fread(frame.data, 1, 8, fp);  // JPEG 데이터를 8바이트씩 읽기
+    struct can_frame pic;
+    while (1) {
+        memset(&pic, 0, sizeof(pic));
+        len = fread(pic.data, 1, 8, fp);
         if (len <= 0) break;
 
-        frame.can_id = TO_OBC_ID;
-        frame.can_dlc = len;
-        write(sock, &frame, sizeof(frame));
+        pic.can_id = TO_OBC_ID;
+        pic.can_dlc = len;
+        write(sock, &pic, sizeof(pic));
         usleep(1000);
 
+        if (seq == 0) {
+            printf("첫 프레임 데이터: ");
+            for (int i = 0; i < len; i++) {
+                printf("%02X ", pic.data[i]);
+            }
+            printf("\n");
+        }
 
-if (seq == 0) {
-    printf("첫 프레임 데이터: ");
-    for (int i = 0; i < len; i++) {
-        printf("%02X ", frame.data[i]);
-    }
-    printf("\n");
-}
         seq++;
     }
 
     fclose(fp);
 
-    // 전송 종료 프레임 전송
-    frame.can_id = TO_OBC_ID;
-    frame.can_dlc = 1;
-    frame.data[0] = 0xFF;
-    write(sock, &frame, sizeof(frame));
-
+    pic.can_id = TO_OBC_ID;
+    pic.can_dlc = 1;
+    pic.data[0] = 0xFF;
+    write(sock, &pic, sizeof(pic));
     printf("사진 전송 완료 (%d 프레임)\n", seq);
+
+    sleep(3);
+    return 1;
+
     // unlink(fullpath); // 필요시 주석 해제
-
-
 }
+
+
+
+
+
+
+
 
 // int main() {
 //     int s = setup_can_socket("can0");

@@ -17,20 +17,8 @@
 #include <sys/time.h>
 
 
-#define CMD_ID     0x200
-#define DATA_ID    0x300
-#define END_ID     0x3FF
-#define NAME_ID    0x3FE
-#define ECHO_ID    0x36
-#define STATUS_ID  0x2FF
-#define CAMERA_CMD_ID 0x106
-#define VIDEO_CMD_ID 0x120
-
-
-
 #define TO_OBC_ID   0x100
 
-#define CMDHEL_ID       0x030
 #define CMDPIC_ID       0x031
 #define CMDVID_ID       0x033
 #define CMDRESET_ID     0x034
