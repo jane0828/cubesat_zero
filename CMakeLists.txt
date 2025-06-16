@@ -5,11 +5,12 @@ project(zero_Project C)
 set(SOURCES
     main.c
     CMDACK_zero.c
-    CMDHEL_zero.c
     CMDPIC_zero.c
     CMDRESET_zero.c
     CMDVID_zero.c
     functions.c
+    ACKCHECK_zero.c
+    TMSR.c
 )
 
 # 실행 파일 생성

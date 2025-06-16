@@ -1,6 +1,7 @@
-CMakeFiles/zero_app.dir/CMDACK_zero.c.o: \
- /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDACK_zero.c \
+CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o: \
+ /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/ACKCHECK_zero.c \
  /usr/include/stdc-predef.h \
+ /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/functions.h \
  /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/common.h \
  /usr/include/stdio.h \
  /usr/include/arm-linux-gnueabihf/bits/libc-header-start.h \
@@ -89,5 +90,4 @@ CMakeFiles/zero_app.dir/CMDACK_zero.c.o: \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/arm-linux-gnueabihf/bits/ioctl-types.h \
  /usr/include/arm-linux-gnueabihf/sys/ttydefaults.h \
- /usr/include/arm-linux-gnueabihf/sys/time.h \
- /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/functions.h
+ /usr/include/arm-linux-gnueabihf/sys/time.h

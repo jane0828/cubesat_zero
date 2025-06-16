@@ -17,14 +17,14 @@
 #include <sys/time.h>
 
 
-#define CMD_ID     0x200
-#define DATA_ID    0x300
-#define END_ID     0x3FF
-#define NAME_ID    0x3FE
-#define ECHO_ID    0x36
-#define STATUS_ID  0x2FF
-#define CAMERA_CMD_ID 0x106
-#define VIDEO_CMD_ID 0x120
+//#define CMD_ID     0x200
+//#define DATA_ID    0x300
+//#define END_ID     0x3FF
+//#define NAME_ID    0x3FE
+//#define ECHO_ID    0x36
+//#define STATUS_ID  0x2FF
+//#define CAMERA_CMD_ID 0x106
+//#define VIDEO_CMD_ID 0x120
 
 
 
@@ -35,10 +35,15 @@
 #define CMDVID_ID       0x033
 #define CMDRESET_ID     0x034
 #define CMDECHO_ID      0x036
-#define CMDRSV_ID       0x039
+#define CMDTMSR_ID      0x037
+#define CMDTMLR_ID      0x038
+#define CMDRSVPIC_ID    0x039
+#define CMDLEDPWR_ID    0x050
+#define CMD_TMLIGNT_ID  0x051
+#define CMD_TMTEMP_ID   0x052
+#define CMD_LEDECHO_ID  0x055
 
-
-#define FLAG_ACK        0x004
+//#define FLAG_ACK        0x004
 
 
 #define END_FRAME_VAL  0xFF

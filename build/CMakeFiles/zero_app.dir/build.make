@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/doteam/Desktop/Camera_team
+CMAKE_SOURCE_DIR = /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/doteam/Desktop/Camera_team/build
+CMAKE_BINARY_DIR = /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/zero_app.dir/depend.make
@@ -70,126 +70,142 @@ include CMakeFiles/zero_app.dir/progress.make
 include CMakeFiles/zero_app.dir/flags.make
 
 CMakeFiles/zero_app.dir/main.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/main.c.o: /home/doteam/Desktop/Camera_team/main.c
+CMakeFiles/zero_app.dir/main.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/main.c
 CMakeFiles/zero_app.dir/main.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/zero_app.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/main.c.o -MF CMakeFiles/zero_app.dir/main.c.o.d -o CMakeFiles/zero_app.dir/main.c.o -c /home/doteam/Desktop/Camera_team/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/zero_app.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/main.c.o -MF CMakeFiles/zero_app.dir/main.c.o.d -o CMakeFiles/zero_app.dir/main.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/main.c
 
 CMakeFiles/zero_app.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/main.c > CMakeFiles/zero_app.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/main.c > CMakeFiles/zero_app.dir/main.c.i
 
 CMakeFiles/zero_app.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/main.c -o CMakeFiles/zero_app.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/main.c -o CMakeFiles/zero_app.dir/main.c.s
 
 CMakeFiles/zero_app.dir/CMDACK_zero.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/CMDACK_zero.c.o: /home/doteam/Desktop/Camera_team/CMDACK_zero.c
+CMakeFiles/zero_app.dir/CMDACK_zero.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDACK_zero.c
 CMakeFiles/zero_app.dir/CMDACK_zero.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/zero_app.dir/CMDACK_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDACK_zero.c.o -MF CMakeFiles/zero_app.dir/CMDACK_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDACK_zero.c.o -c /home/doteam/Desktop/Camera_team/CMDACK_zero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/zero_app.dir/CMDACK_zero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDACK_zero.c.o -MF CMakeFiles/zero_app.dir/CMDACK_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDACK_zero.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDACK_zero.c
 
 CMakeFiles/zero_app.dir/CMDACK_zero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/CMDACK_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/CMDACK_zero.c > CMakeFiles/zero_app.dir/CMDACK_zero.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDACK_zero.c > CMakeFiles/zero_app.dir/CMDACK_zero.c.i
 
 CMakeFiles/zero_app.dir/CMDACK_zero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/CMDACK_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/CMDACK_zero.c -o CMakeFiles/zero_app.dir/CMDACK_zero.c.s
-
-CMakeFiles/zero_app.dir/CMDHEL_zero.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/CMDHEL_zero.c.o: /home/doteam/Desktop/Camera_team/CMDHEL_zero.c
-CMakeFiles/zero_app.dir/CMDHEL_zero.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/zero_app.dir/CMDHEL_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDHEL_zero.c.o -MF CMakeFiles/zero_app.dir/CMDHEL_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDHEL_zero.c.o -c /home/doteam/Desktop/Camera_team/CMDHEL_zero.c
-
-CMakeFiles/zero_app.dir/CMDHEL_zero.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/CMDHEL_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/CMDHEL_zero.c > CMakeFiles/zero_app.dir/CMDHEL_zero.c.i
-
-CMakeFiles/zero_app.dir/CMDHEL_zero.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/CMDHEL_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/CMDHEL_zero.c -o CMakeFiles/zero_app.dir/CMDHEL_zero.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDACK_zero.c -o CMakeFiles/zero_app.dir/CMDACK_zero.c.s
 
 CMakeFiles/zero_app.dir/CMDPIC_zero.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/CMDPIC_zero.c.o: /home/doteam/Desktop/Camera_team/CMDPIC_zero.c
+CMakeFiles/zero_app.dir/CMDPIC_zero.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDPIC_zero.c
 CMakeFiles/zero_app.dir/CMDPIC_zero.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/zero_app.dir/CMDPIC_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDPIC_zero.c.o -MF CMakeFiles/zero_app.dir/CMDPIC_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDPIC_zero.c.o -c /home/doteam/Desktop/Camera_team/CMDPIC_zero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/zero_app.dir/CMDPIC_zero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDPIC_zero.c.o -MF CMakeFiles/zero_app.dir/CMDPIC_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDPIC_zero.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDPIC_zero.c
 
 CMakeFiles/zero_app.dir/CMDPIC_zero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/CMDPIC_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/CMDPIC_zero.c > CMakeFiles/zero_app.dir/CMDPIC_zero.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDPIC_zero.c > CMakeFiles/zero_app.dir/CMDPIC_zero.c.i
 
 CMakeFiles/zero_app.dir/CMDPIC_zero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/CMDPIC_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/CMDPIC_zero.c -o CMakeFiles/zero_app.dir/CMDPIC_zero.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDPIC_zero.c -o CMakeFiles/zero_app.dir/CMDPIC_zero.c.s
 
 CMakeFiles/zero_app.dir/CMDRESET_zero.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/CMDRESET_zero.c.o: /home/doteam/Desktop/Camera_team/CMDRESET_zero.c
+CMakeFiles/zero_app.dir/CMDRESET_zero.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDRESET_zero.c
 CMakeFiles/zero_app.dir/CMDRESET_zero.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/zero_app.dir/CMDRESET_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDRESET_zero.c.o -MF CMakeFiles/zero_app.dir/CMDRESET_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDRESET_zero.c.o -c /home/doteam/Desktop/Camera_team/CMDRESET_zero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/zero_app.dir/CMDRESET_zero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDRESET_zero.c.o -MF CMakeFiles/zero_app.dir/CMDRESET_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDRESET_zero.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDRESET_zero.c
 
 CMakeFiles/zero_app.dir/CMDRESET_zero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/CMDRESET_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/CMDRESET_zero.c > CMakeFiles/zero_app.dir/CMDRESET_zero.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDRESET_zero.c > CMakeFiles/zero_app.dir/CMDRESET_zero.c.i
 
 CMakeFiles/zero_app.dir/CMDRESET_zero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/CMDRESET_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/CMDRESET_zero.c -o CMakeFiles/zero_app.dir/CMDRESET_zero.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDRESET_zero.c -o CMakeFiles/zero_app.dir/CMDRESET_zero.c.s
 
 CMakeFiles/zero_app.dir/CMDVID_zero.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/CMDVID_zero.c.o: /home/doteam/Desktop/Camera_team/CMDVID_zero.c
+CMakeFiles/zero_app.dir/CMDVID_zero.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDVID_zero.c
 CMakeFiles/zero_app.dir/CMDVID_zero.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/zero_app.dir/CMDVID_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDVID_zero.c.o -MF CMakeFiles/zero_app.dir/CMDVID_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDVID_zero.c.o -c /home/doteam/Desktop/Camera_team/CMDVID_zero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/zero_app.dir/CMDVID_zero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/CMDVID_zero.c.o -MF CMakeFiles/zero_app.dir/CMDVID_zero.c.o.d -o CMakeFiles/zero_app.dir/CMDVID_zero.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDVID_zero.c
 
 CMakeFiles/zero_app.dir/CMDVID_zero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/CMDVID_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/CMDVID_zero.c > CMakeFiles/zero_app.dir/CMDVID_zero.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDVID_zero.c > CMakeFiles/zero_app.dir/CMDVID_zero.c.i
 
 CMakeFiles/zero_app.dir/CMDVID_zero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/CMDVID_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/CMDVID_zero.c -o CMakeFiles/zero_app.dir/CMDVID_zero.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDVID_zero.c -o CMakeFiles/zero_app.dir/CMDVID_zero.c.s
 
 CMakeFiles/zero_app.dir/functions.c.o: CMakeFiles/zero_app.dir/flags.make
-CMakeFiles/zero_app.dir/functions.c.o: /home/doteam/Desktop/Camera_team/functions.c
+CMakeFiles/zero_app.dir/functions.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/functions.c
 CMakeFiles/zero_app.dir/functions.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/zero_app.dir/functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/functions.c.o -MF CMakeFiles/zero_app.dir/functions.c.o.d -o CMakeFiles/zero_app.dir/functions.c.o -c /home/doteam/Desktop/Camera_team/functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/zero_app.dir/functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/functions.c.o -MF CMakeFiles/zero_app.dir/functions.c.o.d -o CMakeFiles/zero_app.dir/functions.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/functions.c
 
 CMakeFiles/zero_app.dir/functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam/Desktop/Camera_team/functions.c > CMakeFiles/zero_app.dir/functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/functions.c > CMakeFiles/zero_app.dir/functions.c.i
 
 CMakeFiles/zero_app.dir/functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam/Desktop/Camera_team/functions.c -o CMakeFiles/zero_app.dir/functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/functions.c -o CMakeFiles/zero_app.dir/functions.c.s
+
+CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o: CMakeFiles/zero_app.dir/flags.make
+CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/ACKCHECK_zero.c
+CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o -MF CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o.d -o CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/ACKCHECK_zero.c
+
+CMakeFiles/zero_app.dir/ACKCHECK_zero.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/ACKCHECK_zero.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/ACKCHECK_zero.c > CMakeFiles/zero_app.dir/ACKCHECK_zero.c.i
+
+CMakeFiles/zero_app.dir/ACKCHECK_zero.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/ACKCHECK_zero.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/ACKCHECK_zero.c -o CMakeFiles/zero_app.dir/ACKCHECK_zero.c.s
+
+CMakeFiles/zero_app.dir/TMSR.c.o: CMakeFiles/zero_app.dir/flags.make
+CMakeFiles/zero_app.dir/TMSR.c.o: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/TMSR.c
+CMakeFiles/zero_app.dir/TMSR.c.o: CMakeFiles/zero_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/zero_app.dir/TMSR.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zero_app.dir/TMSR.c.o -MF CMakeFiles/zero_app.dir/TMSR.c.o.d -o CMakeFiles/zero_app.dir/TMSR.c.o -c /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/TMSR.c
+
+CMakeFiles/zero_app.dir/TMSR.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zero_app.dir/TMSR.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/TMSR.c > CMakeFiles/zero_app.dir/TMSR.c.i
+
+CMakeFiles/zero_app.dir/TMSR.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zero_app.dir/TMSR.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/TMSR.c -o CMakeFiles/zero_app.dir/TMSR.c.s
 
 # Object files for target zero_app
 zero_app_OBJECTS = \
 "CMakeFiles/zero_app.dir/main.c.o" \
 "CMakeFiles/zero_app.dir/CMDACK_zero.c.o" \
-"CMakeFiles/zero_app.dir/CMDHEL_zero.c.o" \
 "CMakeFiles/zero_app.dir/CMDPIC_zero.c.o" \
 "CMakeFiles/zero_app.dir/CMDRESET_zero.c.o" \
 "CMakeFiles/zero_app.dir/CMDVID_zero.c.o" \
-"CMakeFiles/zero_app.dir/functions.c.o"
+"CMakeFiles/zero_app.dir/functions.c.o" \
+"CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o" \
+"CMakeFiles/zero_app.dir/TMSR.c.o"
 
 # External object files for target zero_app
 zero_app_EXTERNAL_OBJECTS =
 
 zero_app: CMakeFiles/zero_app.dir/main.c.o
 zero_app: CMakeFiles/zero_app.dir/CMDACK_zero.c.o
-zero_app: CMakeFiles/zero_app.dir/CMDHEL_zero.c.o
 zero_app: CMakeFiles/zero_app.dir/CMDPIC_zero.c.o
 zero_app: CMakeFiles/zero_app.dir/CMDRESET_zero.c.o
 zero_app: CMakeFiles/zero_app.dir/CMDVID_zero.c.o
 zero_app: CMakeFiles/zero_app.dir/functions.c.o
+zero_app: CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o
+zero_app: CMakeFiles/zero_app.dir/TMSR.c.o
 zero_app: CMakeFiles/zero_app.dir/build.make
 zero_app: CMakeFiles/zero_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable zero_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable zero_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zero_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,6 +217,6 @@ CMakeFiles/zero_app.dir/clean:
 .PHONY : CMakeFiles/zero_app.dir/clean
 
 CMakeFiles/zero_app.dir/depend:
-	cd /home/doteam/Desktop/Camera_team/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/doteam/Desktop/Camera_team /home/doteam/Desktop/Camera_team /home/doteam/Desktop/Camera_team/build /home/doteam/Desktop/Camera_team/build /home/doteam/Desktop/Camera_team/build/CMakeFiles/zero_app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles/zero_app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zero_app.dir/depend
 

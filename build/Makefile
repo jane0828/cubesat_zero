@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/doteam/Desktop/Camera_team
+CMAKE_SOURCE_DIR = /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/doteam/Desktop/Camera_team/build
+CMAKE_BINARY_DIR = /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam/Desktop/Camera_team/build/CMakeFiles /home/doteam/Desktop/Camera_team/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam/Desktop/Camera_team/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ zero_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/build
 .PHONY : zero_app/fast
 
+ACKCHECK_zero.o: ACKCHECK_zero.c.o
+.PHONY : ACKCHECK_zero.o
+
+# target to build an object file
+ACKCHECK_zero.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/ACKCHECK_zero.c.o
+.PHONY : ACKCHECK_zero.c.o
+
+ACKCHECK_zero.i: ACKCHECK_zero.c.i
+.PHONY : ACKCHECK_zero.i
+
+# target to preprocess a source file
+ACKCHECK_zero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/ACKCHECK_zero.c.i
+.PHONY : ACKCHECK_zero.c.i
+
+ACKCHECK_zero.s: ACKCHECK_zero.c.s
+.PHONY : ACKCHECK_zero.s
+
+# target to generate assembly for a file
+ACKCHECK_zero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/ACKCHECK_zero.c.s
+.PHONY : ACKCHECK_zero.c.s
+
 CMDACK_zero.o: CMDACK_zero.c.o
 .PHONY : CMDACK_zero.o
 
@@ -152,30 +176,6 @@ CMDACK_zero.s: CMDACK_zero.c.s
 CMDACK_zero.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/CMDACK_zero.c.s
 .PHONY : CMDACK_zero.c.s
-
-CMDHEL_zero.o: CMDHEL_zero.c.o
-.PHONY : CMDHEL_zero.o
-
-# target to build an object file
-CMDHEL_zero.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/CMDHEL_zero.c.o
-.PHONY : CMDHEL_zero.c.o
-
-CMDHEL_zero.i: CMDHEL_zero.c.i
-.PHONY : CMDHEL_zero.i
-
-# target to preprocess a source file
-CMDHEL_zero.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/CMDHEL_zero.c.i
-.PHONY : CMDHEL_zero.c.i
-
-CMDHEL_zero.s: CMDHEL_zero.c.s
-.PHONY : CMDHEL_zero.s
-
-# target to generate assembly for a file
-CMDHEL_zero.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/CMDHEL_zero.c.s
-.PHONY : CMDHEL_zero.c.s
 
 CMDPIC_zero.o: CMDPIC_zero.c.o
 .PHONY : CMDPIC_zero.o
@@ -249,6 +249,30 @@ CMDVID_zero.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/CMDVID_zero.c.s
 .PHONY : CMDVID_zero.c.s
 
+TMSR.o: TMSR.c.o
+.PHONY : TMSR.o
+
+# target to build an object file
+TMSR.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/TMSR.c.o
+.PHONY : TMSR.c.o
+
+TMSR.i: TMSR.c.i
+.PHONY : TMSR.i
+
+# target to preprocess a source file
+TMSR.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/TMSR.c.i
+.PHONY : TMSR.c.i
+
+TMSR.s: TMSR.c.s
+.PHONY : TMSR.s
+
+# target to generate assembly for a file
+TMSR.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/TMSR.c.s
+.PHONY : TMSR.c.s
+
 functions.o: functions.c.o
 .PHONY : functions.o
 
@@ -306,12 +330,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... zero_app"
+	@echo "... ACKCHECK_zero.o"
+	@echo "... ACKCHECK_zero.i"
+	@echo "... ACKCHECK_zero.s"
 	@echo "... CMDACK_zero.o"
 	@echo "... CMDACK_zero.i"
 	@echo "... CMDACK_zero.s"
-	@echo "... CMDHEL_zero.o"
-	@echo "... CMDHEL_zero.i"
-	@echo "... CMDHEL_zero.s"
 	@echo "... CMDPIC_zero.o"
 	@echo "... CMDPIC_zero.i"
 	@echo "... CMDPIC_zero.s"
@@ -321,6 +345,9 @@ help:
 	@echo "... CMDVID_zero.o"
 	@echo "... CMDVID_zero.i"
 	@echo "... CMDVID_zero.s"
+	@echo "... TMSR.o"
+	@echo "... TMSR.i"
+	@echo "... TMSR.s"
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"

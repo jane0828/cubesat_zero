@@ -1,14 +1,14 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.12.25+rpt-rpi-v8")
+set(CMAKE_HOST_SYSTEM "Linux-6.12.25+rpt-rpi-v7")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.12.25+rpt-rpi-v8")
-set(CMAKE_HOST_SYSTEM_PROCESSOR "aarch64")
+set(CMAKE_HOST_SYSTEM_VERSION "6.12.25+rpt-rpi-v7")
+set(CMAKE_HOST_SYSTEM_PROCESSOR "armv7l")
 
 
 
-set(CMAKE_SYSTEM "Linux-6.12.25+rpt-rpi-v8")
+set(CMAKE_SYSTEM "Linux-6.12.25+rpt-rpi-v7")
 set(CMAKE_SYSTEM_NAME "Linux")
-set(CMAKE_SYSTEM_VERSION "6.12.25+rpt-rpi-v8")
-set(CMAKE_SYSTEM_PROCESSOR "aarch64")
+set(CMAKE_SYSTEM_VERSION "6.12.25+rpt-rpi-v7")
+set(CMAKE_SYSTEM_PROCESSOR "armv7l")
 
 set(CMAKE_CROSSCOMPILING "FALSE")
 

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/doteam/Desktop/Camera_team
+CMAKE_SOURCE_DIR = /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/doteam/Desktop/Camera_team/build
+CMAKE_BINARY_DIR = /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/zero_app.dir/clean
 CMakeFiles/zero_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_app.dir/build.make CMakeFiles/zero_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doteam/Desktop/Camera_team/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target zero_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target zero_app"
 .PHONY : CMakeFiles/zero_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zero_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam/Desktop/Camera_team/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zero_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam/Desktop/Camera_team/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/CMakeFiles 0
 .PHONY : CMakeFiles/zero_app.dir/rule
 
 # Convenience name for target.

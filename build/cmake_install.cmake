@@ -1,4 +1,4 @@
-# Install script for directory: /home/doteam/Desktop/Camera_team
+# Install script for directory: /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/doteam/Desktop/Camera_team/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,5 +1,5 @@
-CMakeFiles/zero_app.dir/CMDACK_zero.c.o: \
- /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/CMDACK_zero.c \
+CMakeFiles/zero_app.dir/TMSR.c.o: \
+ /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/TMSR.c \
  /usr/include/stdc-predef.h \
  /home/doteam-CAMERA-0/Desktop/Camera_team/cubesat_zero/common.h \
  /usr/include/stdio.h \

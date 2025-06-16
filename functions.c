@@ -35,14 +35,14 @@ int wait_for_can_up(const char *ifname) {
     return 0;  // 실패
 }
 
-void send_echo_reply(int sock) {
-    struct can_frame reply;
-    reply.can_id = ECHO_ID;
-    reply.can_dlc = 1;
-    reply.data[0] = 0x07;
-    if (write(sock, &reply, sizeof(reply)) != sizeof(reply)) {
-        perror("에코 응답 전송 실패");
-    } else {
-        printf("에코 응답 전송 완료\n");
-    }
-}
+//void send_echo_reply(int sock) {
+//    struct can_frame reply;
+//    reply.can_id = ECHO_ID;
+//    reply.can_dlc = 1;
+//    reply.data[0] = 0x07;
+//    if (write(sock, &reply, sizeof(reply)) != sizeof(reply)) {
+//        perror("에코 응답 전송 실패");
+//    } else {
+//        printf("에코 응답 전송 완료\n");
+//    }
+//}

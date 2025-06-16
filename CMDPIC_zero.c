@@ -12,7 +12,7 @@ void parse_camera_command(const uint8_t data[8], uint8_t *delay, uint32_t *shutt
 }
 
 
-void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res, uint8_t mode, int8_t ev) {
+int take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res, uint8_t mode, int8_t ev) {
     sleep(delay);
 
     // 파일명 생성
@@ -26,7 +26,7 @@ void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res,
 
     char fullpath[512];
     snprintf(fullpath, sizeof(fullpath),
-             "/home/doteam/Desktop/Camera_team/pictures/%s", filename);
+             "/home/doteam-CAMERA-0/Desktop/Camera_team/pictures/%s", filename);
 
     int width = 1280, height = 800;
     if (res == 0x00) { width = 1920; height = 1080; }
@@ -45,7 +45,7 @@ void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res,
 
     if (system(cmd) != 0) {
         fprintf(stderr, "사진 촬영 실패\n");
-        return;
+        return 3;
     }
 
     sleep(1);
@@ -53,7 +53,7 @@ void take_photo_and_send(int sock, uint8_t delay, uint32_t shutter, uint8_t res,
     FILE *fp = fopen(fullpath, "rb");
     if (!fp) {
         perror("파일 열기 실패");
-        return;
+        return 4;
     }
 
     fseek(fp, 0, SEEK_SET);  // 파일 포인터 맨 앞으로 이동 (안전용)
@@ -96,7 +96,7 @@ if (seq == 0) {
 
     printf("사진 전송 완료 (%d 프레임)\n", seq);
     // unlink(fullpath); // 필요시 주석 해제
-
+    return 1;
 
 }
 
