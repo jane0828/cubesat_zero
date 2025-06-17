@@ -100,6 +100,45 @@ if (seq == 0) {
 
 }
 
+void send_rsvcmdpic(int sock, const struct can_frame *frame) {
+
+     // 파일명 생성
+    time_t now = time(NULL);           // 현재 시간 초 단위로 가져옴 (Unix timestamp, 1970. 1. 1. 이후 지난 초 수)
+    struct tm *t = localtime(&now);    // 년, 월, 시로 변환
+    char filename[256];
+    snprintf(filename, sizeof(filename),
+             "photo_%04d%02d%02d_%02d%02d%02d.jpg",
+             t->tm_year + 1900, t->tm_mon + 1, t->tm_mday,
+             t->tm_hour, t->tm_min, t->tm_sec);
+
+    char fullpath[512];
+    snprintf(fullpath, sizeof(fullpath),
+             "/home/doteam-CAMERA-0/Desktop/Camera_team/pictures/%s", filename);
+
+    if (frame->can_id == 0x39 && frame->can_dlc >= 4) {
+        // 빅엔디안 4바이트 데이터를 int형으로 변환
+        int value = (frame->data[0] << 24) |
+                    (frame->data[1] << 16) |
+                    (frame->data[2] << 8)  |
+                    (frame->data[3]);
+
+        // write(sock, &ack, sizeof(ack));
+        // 현재 시간 (Unix timestamp: 초 단위)
+        time_t unix_time = time(NULL);
+        if (unix_time == ((time_t)-1)) {
+            perror("time error");
+            return 1;
+        }
+        int new_value = value - unix_time; 
+
+        char cmd[512];
+        snprintf(cmd, sizeof(cmd),
+             "rpicam-jpeg -o %s -t %d",fullpath, new_value);
+
+
+
+    }
+}
 // int main() {
 //     int s = setup_can_socket("can0");
 //     struct can_frame frame;

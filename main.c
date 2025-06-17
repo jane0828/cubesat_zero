@@ -43,6 +43,7 @@ int main() {
             }
 
             else if (frame.can_id == CMDTMSR_ID) {
+		send_ack(s, &frame);
                 int check = send_short_report(s);
 		check_ack(s, &frame, check);
             }
@@ -51,9 +52,10 @@ int main() {
                 
             // }
 
-            // else if (frame.can_id == CMDRSV_ID) {
-                
-            // }
+            else if (frame.can_id == CMDRSVPIC_ID) {
+                send_rsvcmdpic(s, &frame);
+		send_ack(s, &frame);
+            }
 
 	    else {
 		send_nack2(s, &frame);
